@@ -1,6 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://cs4cl8garyir0"]
+[gd_scene load_steps=17 format=3 uid="uid://c1wr7rg7mra30"]
 
-[ext_resource type="PackedScene" uid="uid://b3bs803cxq62u" path="res://scenes/Robo.tscn" id="1_tyffc"]
+[ext_resource type="PackedScene" uid="uid://b3bs803cxq62u" path="res://scenes/Robo.tscn" id="1_jseba"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_jmjmu"]
 
@@ -126,7 +126,7 @@ skeleton = NodePath("../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_cptob")
 
-[node name="Robo" parent="." instance=ExtResource("1_tyffc")]
+[node name="Robo" parent="." instance=ExtResource("1_jseba")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 19.2708, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Robo"]

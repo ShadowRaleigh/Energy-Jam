@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Energy Jam"
-run/main_scene="uid://cs4cl8garyir0"
+run/main_scene="uid://csp4icrb0i3v"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
