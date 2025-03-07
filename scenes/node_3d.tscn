@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://cs4cl8garyir0"]
 
-[ext_resource type="Script" uid="uid://dvcb25ref063i" path="res://scripts/camera.tres.gd" id="1_ns6u7"]
+[ext_resource type="Script" uid="uid://dvcb25ref063i" path="res://scenes/camera.tres.gd" id="1_ns6u7"]
 [ext_resource type="PackedScene" uid="uid://bcrh4lgajbwer" path="res://assets/robo bucha.blend" id="1_tyffc"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_jmjmu"]
