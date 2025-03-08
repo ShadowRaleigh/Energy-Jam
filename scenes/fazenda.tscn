@@ -81,14 +81,15 @@ func _physics_process(delta: float) -> void:
 height = 13.2816
 radius = 1.49
 
-[node name="Node3D" type="Node3D"]
+[node name="Fazenda" type="Node3D"]
 
-[node name="Node3D" type="Node3D" parent="." node_paths=PackedStringArray("target")]
+[node name="Pivo" type="Node3D" parent="." node_paths=PackedStringArray("target")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 2)
 script = ExtResource("1_i2y8b")
 target = NodePath("../CharacterBody3D")
+rotation_speed = 200
 
-[node name="Camera" type="Camera3D" parent="Node3D"]
+[node name="Camera" type="Camera3D" parent="Pivo"]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 17, 8)
 
 [node name="Piso" type="MeshInstance3D" parent="."]
@@ -100,76 +101,76 @@ mesh = SubResource("BoxMesh_jmjmu")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piso/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_tyffc")
 
-[node name="plantation" type="Node3D" parent="."]
+[node name="Plantation" type="Node3D" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="plantation"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Plantation"]
 transform = Transform3D(26.5448, 0, 0, 0, 1, 0, 0, 0, 26.8226, -15.3826, 1.00007, -45.418)
 mesh = SubResource("BoxMesh_nn35h")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="plantation/MeshInstance3D"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Plantation/MeshInstance3D"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plantation/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ns6u7")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="plantation"]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Plantation"]
 transform = Transform3D(26.5448, 0, 0, 0, 1, 0, 0, 0, 26.8226, 45.3526, 1.00007, -45.418)
 mesh = SubResource("BoxMesh_nn35h")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="plantation/MeshInstance3D2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Plantation/MeshInstance3D2"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plantation/MeshInstance3D2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5t4e2")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="plantation"]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Plantation"]
 transform = Transform3D(26.5448, 0, 0, 0, 1, 0, 0, 0, 26.8226, 15.1548, 0.951672, -45.4716)
 mesh = SubResource("BoxMesh_nn35h")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="plantation/MeshInstance3D3"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Plantation/MeshInstance3D3"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plantation/MeshInstance3D3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xvgsr")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="plantation"]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Plantation"]
 transform = Transform3D(26.5448, 0, 0, 0, 1, 0, 0, 0, 26.8226, -15.3826, 1.00007, -15.9497)
 mesh = SubResource("BoxMesh_nn35h")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="plantation/MeshInstance3D4"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Plantation/MeshInstance3D4"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plantation/MeshInstance3D4/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_oqwcg")
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="plantation"]
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Plantation"]
 transform = Transform3D(26.5448, 0, 0, 0, 1, 0, 0, 0, 26.8226, 45.3526, 1.00007, -15.9497)
 mesh = SubResource("BoxMesh_nn35h")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="plantation/MeshInstance3D5"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Plantation/MeshInstance3D5"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plantation/MeshInstance3D5/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_a6664")
 
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="plantation"]
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Plantation"]
 transform = Transform3D(26.5448, 0, 0, 0, 1, 0, 0, 0, 26.8226, 15.1548, 0.951672, -16.0033)
 mesh = SubResource("BoxMesh_nn35h")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="plantation/MeshInstance3D6"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Plantation/MeshInstance3D6"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plantation/MeshInstance3D6/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_10v3s")
 
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="plantation"]
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Plantation"]
 transform = Transform3D(87.6257, 0, 0, 0, 1, 0, 0, 0, 33.9365, 14.6441, 1.00007, 19.7704)
 mesh = SubResource("BoxMesh_nn35h")
 skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="plantation/MeshInstance3D9"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Plantation/MeshInstance3D9"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="plantation/MeshInstance3D9/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plantation/MeshInstance3D9/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_cptob")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
