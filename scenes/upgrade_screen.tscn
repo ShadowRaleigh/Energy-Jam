@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsga83jjjykms"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ds2r0"]
+bg_color = Color(0, 0.443844, 0.685283, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ds2r0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4pa2q"]
+bg_color = Color(0.864675, 0.864675, 0.864675, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3vsiv"]
+bg_color = Color(0.74978, 0.74978, 0.74978, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mh8j6"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+corner_detail = 20
+
+[node name="Upgrade-screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ds2r0")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 215.0
+offset_bottom = 215.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ds2r0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_4pa2q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3vsiv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mh8j6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_mh8j6")
+text = "bot"
